@@ -1,0 +1,432 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier;}{\f1\fnil\fcharset0 Courier New;}{\f2\fnil\fcharset1 Cambria Math;}{\f3\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 6.3.9600}{\*\mmathPr\mmathFont2\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs24\lang9 Backup code of TC\par
+\par
+\par
+TC\b0\fs22\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\par
+# -*- coding: utf-8 -*-\par
+\par
+# Form implementation generated from reading ui file 'TC.ui'\par
+#\par
+# Created by: PyQt5 UI code generator 5.14.2\par
+#\par
+# WARNING! All changes made in this file will be lost!\par
+\par
+\par
+from PyQt5 import QtCore, QtGui, QtWidgets\par
+#importing file Screen\par
+from TCF import Ui_File\par
+\par
+#importing text Screen\par
+from TCT1 import Ui_Text\par
+\par
+class Ui_TheCryptosystem(object):\par
+    def setupUi(self, TheCryptosystem):\par
+        TheCryptosystem.setObjectName("TheCryptosystem")\par
+        TheCryptosystem.resize(740, 411)\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(8)\par
+        TheCryptosystem.setFont(font)\par
+        icon = QtGui.QIcon()\par
+        icon.addPixmap(QtGui.QPixmap("../../2_lQHUBEQe3GmKJdbAxKRFig-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)\par
+        TheCryptosystem.setWindowIcon(icon)\par
+        self.centralwidget = QtWidgets.QWidget(TheCryptosystem)\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(8)\par
+        self.centralwidget.setFont(font)\par
+        self.centralwidget.setObjectName("centralwidget")\par
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton.setGeometry(QtCore.QRect(230, 250, 101, 31))\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(16)\par
+        self.pushButton.setFont(font)\par
+        self.pushButton.setObjectName("pushButton")\par
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton_2.setGeometry(QtCore.QRect(400, 250, 101, 31))\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(16)\par
+        self.pushButton_2.setFont(font)\par
+        self.pushButton_2.setObjectName("pushButton_2")\par
+        self.label = QtWidgets.QLabel(self.centralwidget)\par
+        self.label.setGeometry(QtCore.QRect(190, 20, 371, 121))\par
+        font = QtGui.QFont()\par
+        font.setPointSize(24)\par
+        self.label.setFont(font)\par
+        self.label.setAlignment(QtCore.Qt.AlignCenter)\par
+        self.label.setWordWrap(False)\par
+        self.label.setObjectName("label")\par
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)\par
+        self.label_2.setEnabled(True)\par
+        self.label_2.setGeometry(QtCore.QRect(250, 170, 71, 71))\par
+        self.label_2.setMinimumSize(QtCore.QSize(0, 0))\par
+        self.label_2.setMaximumSize(QtCore.QSize(500500, 50000))\par
+        self.label_2.setFrameShape(QtWidgets.QFrame.NoFrame)\par
+        self.label_2.setText("")\par
+        self.label_2.setPixmap(QtGui.QPixmap("../Interface/samples/Sample again/file_document-text-note-txt-512.png"))\par
+        self.label_2.setScaledContents(True)\par
+        self.label_2.setObjectName("label_2")\par
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)\par
+        self.label_3.setEnabled(True)\par
+        self.label_3.setGeometry(QtCore.QRect(410, 170, 81, 81))\par
+        self.label_3.setSizeIncrement(QtCore.QSize(0, 0))\par
+        self.label_3.setText("")\par
+        self.label_3.setPixmap(QtGui.QPixmap("Sample again/file-explorer-folder-libraries-icon-18298.png"))\par
+        self.label_3.setScaledContents(True)\par
+        self.label_3.setObjectName("label_3")\par
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)\par
+        self.label_4.setGeometry(QtCore.QRect(250, 170, 71, 71))\par
+        self.label_4.setText("")\par
+        self.label_4.setPixmap(QtGui.QPixmap("Sample again/file_document-text-note-txt-512.png"))\par
+        self.label_4.setScaledContents(True)\par
+        self.label_4.setObjectName("label_4")\par
+        TheCryptosystem.setCentralWidget(self.centralwidget)\par
+        self.menubar = QtWidgets.QMenuBar(TheCryptosystem)\par
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 740, 21))\par
+        self.menubar.setObjectName("menubar")\par
+        TheCryptosystem.setMenuBar(self.menubar)\par
+        self.statusbar = QtWidgets.QStatusBar(TheCryptosystem)\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(8)\par
+        self.statusbar.setFont(font)\par
+        self.statusbar.setLayoutDirection(QtCore.Qt.LeftToRight)\par
+        self.statusbar.setObjectName("statusbar")\par
+        TheCryptosystem.setStatusBar(self.statusbar)\par
+\par
+        self.retranslateUi(TheCryptosystem)\par
+        QtCore.QMetaObject.connectSlotsByName(TheCryptosystem)\par
+        self.pushButton.clicked.connect(self.textscr)\par
+    def textscr(self):\par
+        #Text screen code\par
+        self.Text = QtWidgets.QMainWindow()\par
+        self.ui = Ui_Text()\par
+        self.ui.setupUi(self.Text)\par
+        self.Text.show()\par
+\par
+        self.pushButton_2.clicked.connect(self.filescr)\par
+    def filescr(self):\par
+        #file screen code\par
+        self.File = QtWidgets.QMainWindow()\par
+        self.ui = Ui_File()\par
+        self.ui.setupUi(self.File)\par
+        self.File.show()\par
+\par
+        \par
+        \par
+\par
+    def retranslateUi(self, TheCryptosystem):\par
+        _translate = QtCore.QCoreApplication.translate\par
+        TheCryptosystem.setWindowTitle(_translate("TheCryptosystem", "TheCryptosystem"))\par
+        self.pushButton.setText(_translate("TheCryptosystem", "Text"))\par
+        self.pushButton_2.setText(_translate("TheCryptosystem", "File"))\par
+        self.label.setText(_translate("TheCryptosystem", "<html><head/><body><p><span style=\\" font-size:28pt; color:#ff0000;\\">T</span><span style=\\" font-size:28pt;\\">he</span><span style=\\" font-size:28pt; color:#ff0000;\\">C</span><span style=\\" font-size:28pt;\\">ryptosystem</span></p></body></html>"))\par
+\par
+\par
+if __name__ == "__main__":\par
+    import sys\par
+    app = QtWidgets.QApplication(sys.argv)\par
+    TheCryptosystem = QtWidgets.QMainWindow()\par
+    ui = Ui_TheCryptosystem()\par
+    ui.setupUi(TheCryptosystem)\par
+    TheCryptosystem.show()\par
+    sys.exit(app.exec_())\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\qc\b TCF\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\b0\f1 # -*- coding: utf-8 -*-\par
+\par
+# Form implementation generated from reading ui file 'TCF.ui'\par
+#\par
+# Created by: PyQt5 UI code generator 5.14.2\par
+#\par
+# WARNING! All changes made in this file will be lost!\par
+\par
+\par
+from PyQt5 import QtCore, QtGui, QtWidgets\par
+\par
+\par
+class Ui_File(object):\par
+    def setupUi(self, File):\par
+        File.setObjectName("File")\par
+        File.resize(743, 415)\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(10)\par
+        File.setFont(font)\par
+        self.centralwidget = QtWidgets.QWidget(File)\par
+        self.centralwidget.setObjectName("centralwidget")\par
+        self.label = QtWidgets.QLabel(self.centralwidget)\par
+        self.label.setGeometry(QtCore.QRect(260, 80, 161, 41))\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(16)\par
+        self.label.setFont(font)\par
+        self.label.setObjectName("label")\par
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton.setGeometry(QtCore.QRect(420, 90, 75, 23))\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(11)\par
+        self.pushButton.setFont(font)\par
+        self.pushButton.setDefault(False)\par
+        self.pushButton.setFlat(False)\par
+        self.pushButton.setObjectName("pushButton")\par
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton_3.setGeometry(QtCore.QRect(310, 240, 81, 31))\par
+        self.pushButton_3.setObjectName("pushButton_3")\par
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton_2.setGeometry(QtCore.QRect(310, 160, 81, 31))\par
+        self.pushButton_2.setObjectName("pushButton_2")\par
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)\par
+        self.label_2.setGeometry(QtCore.QRect(220, 80, 31, 31))\par
+        self.label_2.setText("")\par
+        self.label_2.setPixmap(QtGui.QPixmap("Sample again/upload.png"))\par
+        self.label_2.setScaledContents(True)\par
+        self.label_2.setObjectName("label_2")\par
+        File.setCentralWidget(self.centralwidget)\par
+        self.menubar = QtWidgets.QMenuBar(File)\par
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 743, 21))\par
+        self.menubar.setObjectName("menubar")\par
+        self.menu_Back = QtWidgets.QMenu(self.menubar)\par
+        self.menu_Back.setObjectName("menu_Back")\par
+        File.setMenuBar(self.menubar)\par
+        self.statusbar = QtWidgets.QStatusBar(File)\par
+        self.statusbar.setObjectName("statusbar")\par
+        File.setStatusBar(self.statusbar)\par
+        self.menubar.addAction(self.menu_Back.menuAction())\par
+\par
+        self.retranslateUi(File)\par
+        QtCore.QMetaObject.connectSlotsByName(File)\par
+\par
+    def retranslateUi(self, File):\par
+        _translate = QtCore.QCoreApplication.translate\par
+        File.setWindowTitle(_translate("File", "TheCryptosystem-File"))\par
+        self.label.setToolTip(_translate("File", "<html><head/><body><p><span style=\\" font-size:16pt;\\">Upload File</span></p></body></html>"))\par
+        self.label.setText(_translate("File", "Upload File:"))\par
+        self.pushButton.setText(_translate("File", "Select"))\par
+        self.pushButton_3.setText(_translate("File", "Decrypt"))\par
+        self.pushButton_2.setText(_translate("File", "Encrypt"))\par
+        self.menu_Back.setTitle(_translate("File", "\f2\u8592?\f3 Back"))\par
+\par
+\f0\par
+if __name__ == "__main__":\par
+    import sys\par
+    app = QtWidgets.QApplication(sys.argv)\par
+    File = QtWidgets.QMainWindow()\par
+    ui = Ui_File()\par
+    ui.setupUi(File)\par
+    File.show()\par
+    sys.exit(app.exec_())\b\lang9\par
+
+\pard\sa200\sl276\slmult1\qc\par
+\par
+\par
+TCT1\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\b0 # -*- coding: utf-8 -*-\par
+\par
+# Form implementation generated from reading ui file 'TCT1.ui'\par
+#\par
+# Created by: PyQt5 UI code generator 5.14.2\par
+#\par
+# WARNING! All changes made in this file will be lost!\par
+\par
+\par
+from PyQt5 import QtCore, QtGui, QtWidgets\par
+#importing Text2 window\par
+from TCT2 import Ui_Text2\par
+\par
+class Ui_Text(object):\par
+    def setupUi(self, Text):\par
+        Text.setObjectName("Text")\par
+        Text.resize(751, 424)\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(10)\par
+        Text.setFont(font)\par
+        self.centralwidget = QtWidgets.QWidget(Text)\par
+        self.centralwidget.setObjectName("centralwidget")\par
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)\par
+        self.label_2.setGeometry(QtCore.QRect(180, 150, 211, 41))\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(16)\par
+        self.label_2.setFont(font)\par
+        self.label_2.setObjectName("label_2")\par
+        self.comboBox = QtWidgets.QComboBox(self.centralwidget)\par
+        self.comboBox.setGeometry(QtCore.QRect(390, 160, 161, 21))\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(12)\par
+        self.comboBox.setFont(font)\par
+        self.comboBox.setFrame(False)\par
+        self.comboBox.setObjectName("comboBox")\par
+        icon = QtGui.QIcon()\par
+        icon.addPixmap(QtGui.QPixmap("Sample again/BABY_ICONS_COLOR-01-512.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)\par
+        self.comboBox.addItem(icon, "")\par
+        icon1 = QtGui.QIcon()\par
+        icon1.addPixmap(QtGui.QPixmap("Sample again/download-removebg-preview (1).png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)\par
+        self.comboBox.addItem(icon1, "")\par
+        icon2 = QtGui.QIcon()\par
+        icon2.addPixmap(QtGui.QPixmap("Sample again/Incognitologo_square.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)\par
+        self.comboBox.addItem(icon2, "")\par
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton.setGeometry(QtCore.QRect(660, 350, 71, 31))\par
+        font = QtGui.QFont()\par
+        font.setPointSize(11)\par
+        self.pushButton.setFont(font)\par
+        self.pushButton.setObjectName("pushButton")\par
+        Text.setCentralWidget(self.centralwidget)\par
+        self.menubar = QtWidgets.QMenuBar(Text)\par
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 751, 21))\par
+        self.menubar.setObjectName("menubar")\par
+        self.menu_Back = QtWidgets.QMenu(self.menubar)\par
+        self.menu_Back.setObjectName("menu_Back")\par
+        Text.setMenuBar(self.menubar)\par
+        self.statusbar = QtWidgets.QStatusBar(Text)\par
+        self.statusbar.setObjectName("statusbar")\par
+        Text.setStatusBar(self.statusbar)\par
+        self.menubar.addAction(self.menu_Back.menuAction())\par
+\par
+        self.retranslateUi(Text)\par
+        QtCore.QMetaObject.connectSlotsByName(Text)\par
+        self.pushButton.clicked.connect(self.secondt)\par
+    def secondt(self):\par
+        #code for secondt\par
+        self.Text2 = QtWidgets.QMainWindow()\par
+        self.ui = Ui_Text2()\par
+        self.ui.setupUi(self.Text2)\par
+        self.Text2.show()\par
+\par
+    def retranslateUi(self, Text):\par
+        _translate = QtCore.QCoreApplication.translate\par
+        Text.setWindowTitle(_translate("Text", "TheCryptosystem-Text"))\par
+        self.label_2.setToolTip(_translate("Text", "<html><head/><body><p><span style=\\" font-size:16pt;\\">Upload File</span></p></body></html>"))\par
+        self.label_2.setText(_translate("Text", "Protection Levl:"))\par
+        self.comboBox.setItemText(0, _translate("Text", "Script Kidde"))\par
+        self.comboBox.setItemText(1, _translate("Text", "Programmer"))\par
+        self.comboBox.setItemText(2, _translate("Text", "Black Hat"))\par
+        self.pushButton.setText(_translate("Text", "Next"))\par
+        self.menu_Back.setTitle(_translate("Text", "\f2\u8592?\f1 Back"))\par
+\par
+\par
+if __name__ == "__main__":\par
+    import sys\par
+    app = QtWidgets.QApplication(sys.argv)\par
+    Text = QtWidgets.QMainWindow()\par
+    ui = Ui_Text()\par
+    ui.setupUi(Text)\par
+    Text.show()\par
+    sys.exit(app.exec_())\b\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\qc\par
+\par
+\par
+TCT2\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\b0 # -*- coding: utf-8 -*-\par
+\par
+# Form implementation generated from reading ui file 'TCT2.ui'\par
+#\par
+# Created by: PyQt5 UI code generator 5.14.2\par
+#\par
+# WARNING! All changes made in this file will be lost!\par
+\par
+\par
+from PyQt5 import QtCore, QtGui, QtWidgets\par
+\par
+\par
+class Ui_Text2(object):\par
+    def setupUi(self, Text2):\par
+        Text2.setObjectName("Text2")\par
+        Text2.resize(746, 418)\par
+        font = QtGui.QFont()\par
+        font.setFamily("Courier New")\par
+        font.setPointSize(10)\par
+        Text2.setFont(font)\par
+        self.centralwidget = QtWidgets.QWidget(Text2)\par
+        self.centralwidget.setObjectName("centralwidget")\par
+        self.plainTextEdit = QtWidgets.QPlainTextEdit(self.centralwidget)\par
+        self.plainTextEdit.setGeometry(QtCore.QRect(20, 50, 701, 111))\par
+        self.plainTextEdit.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.IBeamCursor))\par
+        self.plainTextEdit.setObjectName("plainTextEdit")\par
+        self.label = QtWidgets.QLabel(self.centralwidget)\par
+        self.label.setGeometry(QtCore.QRect(20, 20, 141, 21))\par
+        font = QtGui.QFont()\par
+        font.setBold(True)\par
+        font.setWeight(75)\par
+        self.label.setFont(font)\par
+        self.label.setObjectName("label")\par
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton.setGeometry(QtCore.QRect(230, 180, 81, 31))\par
+        self.pushButton.setObjectName("pushButton")\par
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton_3.setGeometry(QtCore.QRect(380, 180, 81, 31))\par
+        self.pushButton_3.setObjectName("pushButton_3")\par
+        self.plainTextEdit_2 = QtWidgets.QPlainTextEdit(self.centralwidget)\par
+        self.plainTextEdit_2.setGeometry(QtCore.QRect(20, 220, 701, 111))\par
+        self.plainTextEdit_2.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.IBeamCursor))\par
+        self.plainTextEdit_2.setObjectName("plainTextEdit_2")\par
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton_2.setGeometry(QtCore.QRect(260, 340, 75, 23))\par
+        self.pushButton_2.setObjectName("pushButton_2")\par
+        self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)\par
+        self.pushButton_5.setGeometry(QtCore.QRect(350, 340, 91, 23))\par
+        self.pushButton_5.setObjectName("pushButton_5")\par
+        Text2.setCentralWidget(self.centralwidget)\par
+        self.menubar = QtWidgets.QMenuBar(Text2)\par
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 746, 21))\par
+        self.menubar.setObjectName("menubar")\par
+        self.menu_Back = QtWidgets.QMenu(self.menubar)\par
+        self.menu_Back.setObjectName("menu_Back")\par
+        Text2.setMenuBar(self.menubar)\par
+        self.statusbar = QtWidgets.QStatusBar(Text2)\par
+        self.statusbar.setObjectName("statusbar")\par
+        Text2.setStatusBar(self.statusbar)\par
+        self.menubar.addAction(self.menu_Back.menuAction())\par
+\par
+        self.retranslateUi(Text2)\par
+        QtCore.QMetaObject.connectSlotsByName(Text2)\par
+\par
+    def retranslateUi(self, Text2):\par
+        _translate = QtCore.QCoreApplication.translate\par
+        Text2.setWindowTitle(_translate("Text2", "TheCryptosystem-Text2"))\par
+        self.label.setText(_translate("Text2", "Type your Text "))\par
+        self.pushButton.setText(_translate("Text2", "Encrypt"))\par
+        self.pushButton_3.setText(_translate("Text2", "Decrypt"))\par
+        self.pushButton_2.setText(_translate("Text2", "Copy"))\par
+        self.pushButton_5.setText(_translate("Text2", "Clear All"))\par
+        self.menu_Back.setTitle(_translate("Text2", "\f2\u8592?\f1 Back"))\par
+\par
+\f0\par
+if __name__ == "__main__":\par
+    import sys\par
+    app = QtWidgets.QApplication(sys.argv)\par
+    Text2 = QtWidgets.QMainWindow()\par
+    ui = Ui_Text2()\par
+    ui.setupUi(Text2)\par
+    Text2.show()\par
+    sys.exit(app.exec_())\b\lang9\par
+\b0\f3\par
+}
+ 
